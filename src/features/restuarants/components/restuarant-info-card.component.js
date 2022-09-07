@@ -2,8 +2,8 @@ import React from "react";
 import { SvgXml } from "react-native-svg";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
-import { Spacer } from "../../../components/components/spacer/spacer.component";
-import { Text } from "../../../components/components/typography/text.component";
+import { Spacer } from "../../../components/spacer/spacer.component";
+import { Text } from "../../../components/typography/text.component";
 import {
   RestaurantCard,
   RestaurantCardCover,
