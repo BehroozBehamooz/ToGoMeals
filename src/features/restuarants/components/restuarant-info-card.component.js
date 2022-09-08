@@ -15,7 +15,7 @@ import {
 } from "./restaurant-info-card.styles";
 // css like or react-native styling shape
 
-export const RestuarantInfoCard = ({ restuarant = {} }) => {
+export const RestuarantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restuarants",
     icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
@@ -26,8 +26,8 @@ export const RestuarantInfoCard = ({ restuarant = {} }) => {
     isOpenNow = true,
     rating = 4,
     isClosedTemporarily = true,
-  } = restuarant;
-
+  } = restaurant;
+  // console.log("name: ", name);
   const ratingArray = Array.from(new Array(Math.floor(rating)));
 
   return (
