@@ -35,9 +35,6 @@ export const RestaurantsContextProvider = ({ children }) => {
     retrieveRestaurants();
   }, []);
 
-  if (isLoading) {
-    return;
-  }
   return (
     <RestaurantsContext.Provider
       value={{
