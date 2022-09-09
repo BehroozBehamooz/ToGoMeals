@@ -7,9 +7,6 @@ import { Spacer } from "../../../components/spacer/spacer.component";
 import { SafeAreaView } from "../../../components/utility/safe-area.components";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { Search } from "../components/search.component";
-const SearchView = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
@@ -26,7 +23,7 @@ const Loading = styled(ActivityIndicator)`
 
 export const RestuarantsScreen = () => {
   const restaurantsContext = useContext(RestaurantsContext);
-  const { restaurants, isLoading, error } = restaurantsContext;
+  const { restaurants, isLoading } = restaurantsContext;
 
   return (
     <SafeAreaView>
