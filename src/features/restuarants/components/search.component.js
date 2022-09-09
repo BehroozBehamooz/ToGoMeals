@@ -12,10 +12,6 @@ export const Search = () => {
   const { keyword, search } = locationContext;
   const [searchKeyword, setSearchKeyword] = useState(keyword);
 
-  useEffect(() => {
-    search(keyword);
-  }, []);
-
   return (
     <SearchView>
       <Searchbar
